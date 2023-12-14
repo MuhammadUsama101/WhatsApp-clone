@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+}
+body{
+    background-color: #FCF5EB;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li>i{
+    margin-left: 5px;
+}
+li{
+    position: relative;
+}
+li::before{
+    content: "";
+    border-bottom: 2px solid #25D366;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: scaleX(0);
+    transition: .5s ease;
+    transform-origin: left;
+}
+li:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+button{
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #25D366;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: 1s ease;
+}
+button:hover{
+    color: white;
+}
+button::before{
+    content: "";
+    background-color: #1C1E21;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -12px;
+    top: 100%;
+    border-radius: 50%;
+    transition: .8s .1s ease;
+    z-index: -1;
+}
+button:hover::before{
+    transform: translateY(-50%);
+}
+nav>img{
+    width: 150px;
+}
+
+/* styling main div */
+
+.main{
+    height: 750px;
+    background-image: url(images/main\ img.png);
+    background-size: cover;
+    background-position-x: -45px;
+    margin: 25px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.main-left{
+    width: 300px;
+    color: white;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-left>div>h1{
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.main-left>div>p{
+    font-size: 17px;
+}
+.main-right{
+    width: 400px;
+}
+.main-right>img{
+    width: 450px;
+}
+.main-right>div>img{
+    width: 450px;
+}
+.first-msg ,.last-msg{
+    position: relative;
+}
+.heart {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+.sad{
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    opacity: 0;
+}
+.good-morning{
+    animation: good-morning 1s ease forwards;
+    opacity: 0;
+}
+@keyframes good-morning {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.heart{
+    animation: heart 1.2s .1s ease forwards;
+    opacity: 0;
+}
+@keyframes heart {
+    0%{
+        opacity: 0;
+    }70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.cups{
+    animation: cups 1.2s .5s ease forwards;
+    opacity: 0;
+}
+@keyframes cups {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.voice{
+    animation: voice 1.2s 1s ease forwards;
+    opacity: 0;
+}
+@keyframes voice {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.happy{
+    animation: happy 1.2s 1.5s ease forwards;
+    opacity: 0;
+}
+@keyframes happy {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.sad{
+    animation: sad 1.2s 2s linear forwards;
+}
+@keyframes sad {
+    0%{
+        opacity: 0;
+    }70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.trip{
+    animation: trip 1.2s 2.5s ease forwards;
+    opacity: 0;
+}
+@keyframes trip {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    }30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
