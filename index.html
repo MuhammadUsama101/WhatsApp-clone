@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- navbar -->
@@ -20,16 +21,18 @@
             <a href="#"><li>WhatsApp Web</li> </a>
             <a href="#"><li>Download</li> </a>
         </ul>
-        <button>Download <i class="fa-solid fa-arrow-down-long"></i></button>
+        <button class="btn">Download <i class="fa-solid fa-arrow-down-long"></i></button>
     </nav>
-    <section>
+
+    <!-- main -->
+    <section class="main-section">
         <div class="main">
             <div class="main-left">
                 <div>
                     <h1>Message privately</h1>
                     <p>Simple, reliable, private messaging and calling for free*, available all over the world.</p>
                 </div>
-            <button>Download <i class="fa-solid fa-arrow-down-long"></i></button>
+            <button class="btn">Download <i class="fa-solid fa-arrow-down-long"></i></button>
             </div>
             <div class="main-right">
                 <div class="first-msg">
@@ -45,6 +48,41 @@
                 <img class="trip" src="images/trip.png" alt="">
             </div>
         </div>
-        </section>
+        <p class="para-main">* Data charges may apply. Contact your provider for details.</p>
+    </section>
+
+    <!-- private-msg -->
+    <section class="private-msg">
+        <img data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true" class="top" src="images/top.png" alt="">
+        <p data-aos="fade-up"   data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true" class="center">With private messaging and calling, you can be yourself, speak freely and feel close to the most important people in your life no matter where they are.</p>
+        <img data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true" class="bottom" src="images/bottom.png" alt="">
+    </section>
+
+    <!-- video calling section -->
+    <section class="video-call">
+        <div class="left-video-call" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+            <h1>Never miss a moment with voice and video calls</h1>
+            <p>From a group call to classmates to a quick call with mom, feel like you’re in the same room with voice and video calls.</p>
+            <button class="video-call-btn">Learn more  </button><i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="right-video-call" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+            <img src="images/video call.png" alt="">
+        </div>
+    </section>
+
+    <!-- encryption section -->
+    <section class="encryption">
+        <img src="images/encrypted msg.png" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true"  alt="">
+        <div class="encryption-right" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+            <h1><p class="one">Speak</p><p class="two">freely</p></h1>
+            <p>With end-to-end encryption, your personal messages and calls are secured. Only you and the person you're talking to can read or listen to them, and nobody in between, not even WhatsApp.</p>
+            <button class="video-call-btn">Learn more  </button><i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
