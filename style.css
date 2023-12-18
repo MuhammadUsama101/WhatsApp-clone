@@ -259,25 +259,32 @@ nav>img{
     text-align: center;
     line-height: 45px;
 }
-.video-call ,.encryption{
+.container{
     display: flex;
     margin: 25px;
     height: 750px;
     align-items: center;
     justify-content: space-evenly;
     padding-right: 100px;
+    gap: 50px;
 }
-.left-video-call ,.encryption-right{
+.container-left {
     width:500px;
 }
-.left-video-call>h1 , .encryption-right >h1{
+.container-left>h1 {
     font-size: 50px;
 }
-.left-video-call>p,.encryption-right >p{
+.container-left>p{
     padding: 20px 0;
     font-size: 20px;
 }
-.video-call-btn{
+.container-right{
+    position: relative;
+}
+.padding{
+    padding: 0px 5%;
+}
+.container-btn{
     font-size: 18px;
     border: none;
     background-color: transparent;
@@ -298,4 +305,106 @@ nav>img{
 }
 .encryption-right>button{
     color: white;
+}
+
+.abs{
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    left: 0px;
+}
+.abs-2{
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 25px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #111B21;
+    min-height: 550px;
+    padding-top: 120px;
+}
+.footer-up{
+    width: 1050px;
+    height: 250px;
+    color: white; 
+    display: flex;
+}
+.box{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box>a{
+    color: white;
+    display: block;
+}
+.box1>img{
+    width: 160px;
+}
+.box1{
+    justify-content: space-between;
+    margin-right: 64px;
+}
+.box1>button{
+    margin-bottom: 33px;
+}
+.footer-down{
+    width: 1020px;
+    height: 130px;
+    color: white; 
+    display: flex;
+    border-top: 1px solid gray;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
+.btn2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 2;
+    background-color: #111B21;
+    position: relative;
+    overflow: hidden;
+}
+.btn2>i{
+    font-size: 16px;
+    color: white;
+}
+.btn2::before{
+    content: "";
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    border-radius: 50%;
+    transition: .8s .1s ease;
+    z-index: -1;
+}
+.btn2:hover::before{
+    transform: translateY(-100%);
+}
+.footer-down-box3{
+    display: flex;
+    gap: 20px;
+    padding: 0px 40px;
+}
+.footer-down-box4{
+    width: 230px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+    margin-left: 80px;
 }
